@@ -1,0 +1,704 @@
+
+1 of many
+CMJ Landscape
+Inbox
+
+Connor Banks
+5:34 AM (0 minutes ago)
+to me
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CMJ Landscape LLC — Mowing, Trimming & Yard Care</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+--black: #0a0c0a;
+--black-2: #12150f;
+--black-3: #191d15;
+--line: #262b21;
+--green-deep: #16321f;
+--green: #3f9d54;
+--green-bright: #7be08f;
+--white: #f3f5ef;
+--grey: #9aa39a;
+--grey-dim: #6d766c;
+--radius: 2px;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{
+background:var(--black);
+color:var(--grey);
+font-family:'Work Sans', sans-serif;
+line-height:1.55;
+-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{
+font-family:'Big Shoulders Display', sans-serif;
+text-transform:uppercase;
+letter-spacing:0.02em;
+color:var(--white);
+line-height:0.95;
+}
+a{color:inherit; text-decoration:none;}
+img{max-width:100%; display:block;}
+.mono{font-family:'IBM Plex Mono', monospace; letter-spacing:0.04em;}
+.wrap{max-width:1180px; margin:0 auto; padding:0 28px;}
+section{padding:110px 0;}
+@media(max-width:720px){ section{padding:72px 0;} }
+
+::selection{ background:var(--green); color:var(--black); }
+:focus-visible{ outline:2px solid var(--green-bright); outline-offset:3px; }
+
+/* ---------- NAV ---------- */
+header{
+position:fixed; top:0; left:0; right:0; z-index:50;
+background:rgba(10,12,10,0.88);
+backdrop-filter:blur(6px);
+border-bottom:1px solid var(--line);
+}
+nav{
+display:flex; align-items:center; justify-content:space-between;
+max-width:1180px; margin:0 auto; padding:16px 28px;
+}
+.brand{
+font-family:'Big Shoulders Display', sans-serif;
+font-weight:800; font-size:22px; color:var(--white);
+letter-spacing:0.03em;
+}
+.brand span{color:var(--green-bright);}
+.nav-links{display:flex; gap:32px; font-size:14px; text-transform:uppercase; letter-spacing:0.08em;}
+.nav-links a{color:var(--grey); transition:color .2s;}
+.nav-links a:hover{color:var(--green-bright);}
+.nav-cta{
+background:var(--green); color:var(--black); font-weight:700;
+padding:10px 20px; text-transform:uppercase; font-size:13px; letter-spacing:0.06em;
+border-radius:var(--radius); transition:background .2s;
+}
+.nav-cta:hover{background:var(--green-bright);}
+.burger{display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer;}
+.burger span{width:24px; height:2px; background:var(--white);}
+@media(max-width:820px){
+.nav-links, .nav-cta{display:none;}
+.burger{display:flex;}
+nav.open ~ .mobile-menu{display:flex;}
+}
+.mobile-menu{
+display:none; flex-direction:column; gap:0; background:var(--black-2);
+border-bottom:1px solid var(--line);
+}
+.mobile-menu a{
+padding:16px 28px; border-top:1px solid var(--line);
+text-transform:uppercase; font-size:14px; letter-spacing:0.06em; color:var(--grey);
+}
+
+/* ---------- HERO ---------- */
+.hero{
+position:relative;
+min-height:100svh;
+display:flex; align-items:center;
+padding-top:80px;
+overflow:hidden;
+background:
+repeating-linear-gradient(
+115deg,
+#10160e 0px, #10160e 90px,
+#0c110a 90px, #0c110a 180px
+);
+}
+.hero::before{
+content:'';
+position:absolute; inset:0;
+background:
+radial-gradient(ellipse at 25% 20%, rgba(63,157,84,0.16), transparent 55%),
+radial-gradient(ellipse at 80% 85%, rgba(63,157,84,0.10), transparent 50%),
+linear-gradient(180deg, rgba(10,12,10,0.2) 0%, rgba(10,12,10,0.75) 100%);
+pointer-events:none;
+}
+.hero-grain{
+position:absolute; inset:0; opacity:0.05; mix-blend-mode:overlay; pointer-events:none;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.hero-inner{position:relative; z-index:2;}
+.eyebrow{
+display:inline-flex; align-items:center; gap:10px;
+font-family:'IBM Plex Mono', monospace; font-size:12.5px; letter-spacing:0.12em;
+color:var(--green-bright); text-transform:uppercase; margin-bottom:22px;
+}
+.eyebrow::before{content:''; width:26px; height:1px; background:var(--green-bright);}
+.hero h1{
+font-size:clamp(46px, 8vw, 104px);
+font-weight:900;
+max-width:920px;
+}
+.hero h1 em{font-style:normal; color:var(--green-bright);}
+.hero p.lede{
+color:var(--grey); font-size:clamp(16px,2vw,19px); max-width:520px; margin-top:26px;
+}
+.hero-actions{display:flex; gap:16px; margin-top:40px; flex-wrap:wrap;}
+.btn{
+display:inline-flex; align-items:center; justify-content:center;
+padding:16px 30px; font-size:14px; text-transform:uppercase; letter-spacing:0.08em; font-weight:600;
+border-radius:var(--radius); cursor:pointer; border:1px solid transparent;
+transition:all .2s ease;
+}
+.btn-primary{background:var(--green); color:var(--black);}
+.btn-primary:hover{background:var(--green-bright); transform:translateY(-1px);}
+.btn-outline{border-color:var(--line); color:var(--white); background:transparent;}
+.btn-outline:hover{border-color:var(--green-bright); color:var(--green-bright);}
+.hero-strip{
+position:absolute; bottom:0; left:0; right:0; height:6px;
+background:repeating-linear-gradient(90deg, var(--green) 0 40px, var(--green-deep) 40px 80px);
+z-index:2;
+}
+
+/* ---------- SECTION HEADS ---------- */
+.section-head{max-width:640px; margin-bottom:56px;}
+.section-head .eyebrow::before{content:''; width:26px; height:1px; background:var(--green-bright);}
+.section-head h2{font-size:clamp(32px,4.5vw,54px); font-weight:800;}
+.section-head p{color:var(--grey); margin-top:16px; font-size:16px; max-width:520px;}
+
+/* ---------- SERVICES ---------- */
+.services{background:var(--black-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+.service-grid{
+display:grid; grid-template-columns:repeat(4, 1fr); gap:1px; background:var(--line);
+border:1px solid var(--line);
+}
+@media(max-width:900px){ .service-grid{grid-template-columns:repeat(2,1fr);} }
+@media(max-width:520px){ .service-grid{grid-template-columns:1fr;} }
+.service-card{
+background:var(--black-2); padding:32px 26px; transition:background .25s;
+}
+.service-card:hover{background:var(--black-3);}
+.service-card svg{width:30px; height:30px; stroke:var(--green-bright); margin-bottom:20px;}
+.service-card h3{font-size:20px; font-weight:700; color:var(--white); margin-bottom:8px; text-transform:none; letter-spacing:0;}
+.service-card p{font-size:14px; color:var(--grey-dim);}
+.service-note{
+margin-top:36px; font-family:'IBM Plex Mono', monospace; font-size:13px; color:var(--grey-dim);
+}
+
+/* ---------- OWNERS ---------- */
+.owners-grid{display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start;}
+@media(max-width:820px){ .owners-grid{grid-template-columns:1fr; gap:40px;} }
+.owner-list{display:flex; flex-direction:column; gap:0; border-top:1px solid var(--line);}
+.owner-row{
+display:flex; justify-content:space-between; align-items:baseline;
+padding:22px 0; border-bottom:1px solid var(--line);
+}
+.owner-row h3{font-size:26px; color:var(--white); font-weight:700; text-transform:none; letter-spacing:0;}
+.owner-row span{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--green-bright); text-transform:uppercase; letter-spacing:0.08em;}
+.owners-copy p + p{margin-top:16px;}
+.owners-copy p{font-size:16px; color:var(--grey);}
+.owners-copy strong{color:var(--white); font-weight:600;}
+
+/* ---------- GALLERY ---------- */
+.gallery{background:var(--black-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+.upload-box{
+border:1.5px dashed var(--line); border-radius:var(--radius);
+padding:36px; text-align:center; margin-bottom:40px; transition:border-color .2s, background .2s;
+background:var(--black);
+}
+.upload-box.drag{border-color:var(--green-bright); background:var(--black-3);}
+.upload-box p{font-size:14px; color:var(--grey-dim); margin-top:10px;}
+.upload-box input[type=file]{display:none;}
+.upload-btn-row{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:6px;}
+.gallery-note{
+font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--grey-dim);
+margin-top:14px;
+}
+.gallery-grid{
+display:grid; grid-template-columns:repeat(4, 1fr); gap:14px;
+}
+@media(max-width:900px){ .gallery-grid{grid-template-columns:repeat(3,1fr);} }
+@media(max-width:600px){ .gallery-grid{grid-template-columns:repeat(2,1fr);} }
+.gallery-item{
+position:relative; aspect-ratio:4/3; overflow:hidden; background:var(--black-3);
+border:1px solid var(--line);
+}
+.gallery-item img{width:100%; height:100%; object-fit:cover; transition:transform .35s;}
+.gallery-item:hover img{transform:scale(1.06);}
+.gallery-item button{
+position:absolute; top:6px; right:6px; width:26px; height:26px;
+background:rgba(10,12,10,0.75); color:var(--white); border:1px solid var(--line);
+border-radius:var(--radius); cursor:pointer; font-size:15px; line-height:1;
+opacity:0; transition:opacity .2s;
+}
+.gallery-item:hover button{opacity:1;}
+.gallery-empty{
+grid-column:1/-1; text-align:center; padding:50px 20px; color:var(--grey-dim);
+font-size:14px; border:1px dashed var(--line);
+}
+.gallery-loading{color:var(--grey-dim); font-size:14px; padding:20px 0;}
+
+/* ---------- BOOKING ---------- */
+.booking-wrap{display:grid; grid-template-columns:0.85fr 1.15fr; gap:70px;}
+@media(max-width:900px){ .booking-wrap{grid-template-columns:1fr; gap:44px;} }
+.booking-info h2{font-size:clamp(32px,4.5vw,52px);}
+.info-list{margin-top:32px; display:flex; flex-direction:column; gap:22px;}
+.info-list div{border-left:2px solid var(--green); padding-left:16px;}
+.info-list h4{font-size:13px; text-transform:uppercase; letter-spacing:0.08em; color:var(--green-bright); font-weight:600; margin-bottom:4px;}
+.info-list p{font-size:15px; color:var(--grey);}
+
+form{display:flex; flex-direction:column; gap:22px;}
+.form-row{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
+@media(max-width:560px){ .form-row{grid-template-columns:1fr;} }
+label{
+display:block; font-family:'IBM Plex Mono', monospace; font-size:12px;
+text-transform:uppercase; letter-spacing:0.07em; color:var(--grey-dim); margin-bottom:8px;
+}
+input[type=text], input[type=email], input[type=tel], input[type=date], select, textarea{
+width:100%; background:var(--black-2); border:1px solid var(--line); color:var(--white);
+padding:13px 14px; font-family:'Work Sans', sans-serif; font-size:15px; border-radius:var(--radius);
+transition:border-color .2s;
+}
+input:focus, select:focus, textarea:focus{border-color:var(--green);}
+textarea{resize:vertical; min-height:100px;}
+fieldset{border:1px solid var(--line); border-radius:var(--radius); padding:18px; background:var(--black-2);}
+fieldset legend{padding:0 6px;}
+.check-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px 20px;}
+@media(max-width:560px){ .check-grid{grid-template-columns:1fr;} }
+.check-item{display:flex; align-items:center; gap:10px; font-size:14px; color:var(--grey);}
+.check-item input{accent-color:var(--green); width:16px; height:16px;}
+.submit-row{display:flex; align-items:center; gap:18px; flex-wrap:wrap;}
+#form-status{font-family:'IBM Plex Mono', monospace; font-size:13px; color:var(--green-bright);}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--black-2); border-top:1px solid var(--line); padding:60px 0 30px;}
+.footer-grid{display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:40px;}
+@media(max-width:720px){ .footer-grid{grid-template-columns:1fr; gap:30px;} }
+.footer-grid h4{font-size:12.5px; text-transform:uppercase; letter-spacing:0.08em; color:var(--green-bright); font-weight:600; margin-bottom:14px;}
+.footer-grid p, .footer-grid a{font-size:14px; color:var(--grey); display:block;}
+.footer-grid a{margin-bottom:8px; transition:color .2s;}
+.footer-grid a:hover{color:var(--green-bright);}
+.footer-bottom{
+margin-top:50px; padding-top:24px; border-top:1px solid var(--line);
+display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--grey-dim);
+}
+
+.reveal{opacity:0; transform:translateY(24px); transition:opacity .6s ease, transform .6s ease;}
+.reveal.in{opacity:1; transform:none;}
+@media (prefers-reduced-motion: reduce){
+html{scroll-behavior:auto;}
+.reveal{opacity:1; transform:none; transition:none;}
+.gallery-item img{transition:none;}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav id="navbar">
+<a href="#top" class="brand">CMJ <span>LANDSCAPE</span></a>
+<div class="nav-links">
+<a href="#services">Services</a>
+<a href="#work">Our Work</a>
+<a href="#owners">About</a>
+<a href="#book">Contact</a>
+</div>
+<a href="#book" class="nav-cta">Book a Service</a>
+<button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+<a href="#services">Services</a>
+<a href="#work">Our Work</a>
+<a href="#owners">About</a>
+<a href="#book">Contact</a>
+</div>
+</header>
+
+<div id="top"></div>
+<section class="hero">
+<div class="hero-grain"></div>
+<div class="wrap hero-inner">
+<div class="eyebrow">Owner-Operated · Local &amp; Reliable</div>
+<h1>Sharp cuts.<br>Clean lines.<br><em>No shortcuts.</em></h1>
+<p class="lede">CMJ Landscape LLC handles mowing, trimming, edging, and everything else your property needs to look kept — done right the first time, every visit.</p>
+<div class="hero-actions">
+<a href="#book" class="btn btn-primary">Book a Service</a>
+<a href="#work" class="btn btn-outline">See Our Work</a>
+</div>
+</div>
+<div class="hero-strip"></div>
+</section>
+
+<section class="services" id="services">
+<div class="wrap">
+<div class="section-head reveal">
+<div class="eyebrow">What We Do</div>
+<h2>Full-property care, one crew.</h2>
+<p>No specialists, no add-on quotes for basic upkeep. Every job below is standard work for us.</p>
+</div>
+<div class="service-grid reveal">
+<div class="service-card">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="8" rx="1"></rect><path d="M7 10V6a5 5 0 0 1 10 0v4"></path><circle cx="7.5" cy="18.5" r="1.5"></circle><circle cx="16.5" cy="18.5" r="1.5"></circle></svg>
+<h3>Mowing</h3>
+<p>Consistent-height cuts on a schedule that fits your yard, not a generic route.</p>
+</div>
+<div class="service-card">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 L18 6"></path><path d="M14 4 L20 10"></path><path d="M4 20 L8 20 L4 16 Z"></path></svg>
+<h3>Weed Whacking</h3>
+<p>Fence lines, beds, and tight spots the mower can't reach, cleared every visit.</p>
+</div>
+<div class="service-card">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 C 8 17, 8 6, 21 6"></path><path d="M3 17 L21 17"></path></svg>
+<h3>Edging</h3>
+<p>Crisp, defined borders along walkways, driveways, and garden beds.</p>
+</div>
+<div class="service-card">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22 V10"></path><path d="M12 10 L6 4"></path><path d="M12 14 L18 8"></path></svg>
+<h3>Branch &amp; Shrub Trimming</h3>
+<p>Shaping and cutback for shrubs, small trees, and overgrown branches.</p>
+</div>
+<div class="service-card">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20 Q12 4 21 20 Z"></path><path d="M3 20 H21"></path></svg>
+<h3>Mulching</h3>
+<p>Fresh mulch beds that hold color and keep moisture where it belongs.</p>
+</div>
+<div class="service-card">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 C 16 7, 16 13, 12 17 C 8 13, 8 7, 12 3 Z"></path><path d="M12 17 V21"></path></svg>
+<h3>Leaf &amp; Debris Cleanup</h3>
+<p>Beds, lawns, and gutters cleared of leaves, sticks, and storm debris.</p>
+</div>
+<div class="service-card">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="10" rx="1"></rect><path d="M8 9 V6 M12 9 V4 M16 9 V6"></path></svg>
+<h3>Hedge Shaping</h3>
+<p>Straight lines and clean tops on hedges and privacy screens.</p>
+</div>
+<div class="service-card">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4 L20 20"></path><path d="M4 20 L20 4"></path><circle cx="12" cy="12" r="9"></circle></svg>
+<h3>Seasonal Cleanup</h3>
+<p>Spring wake-up and fall shutdown so the property's ready for what's next.</p>
+</div>
+</div>
+<p class="service-note reveal">Don't see it here? Ask — most yard work fits into what we already do.</p>
+</div>
+</section>
+
+<section id="owners">
+<div class="wrap owners-grid">
+<div class="owners-copy reveal">
+<div class="eyebrow">Who's Doing The Work</div>
+<h2 style="font-size:clamp(30px,4vw,46px); margin-bottom:20px;">Three owners. One standard.</h2>
+<p><strong>Connor Banks, Michael Johnson, and Jayden Posch</strong> founded CMJ Landscape LLC together, and all three run every side of the job — mowing, trimming, edging, cleanup, and everything between.</p>
+<p>Nobody on this crew is boxed into one task. Whoever shows up at your property can handle the whole property, start to finish, without waiting on a specialist.</p>
+</div>
+<div class="reveal">
+<div class="owner-list">
+<div class="owner-row"><h3>Connor Banks</h3><span>Co-Owner</span></div>
+<div class="owner-row"><h3>Michael Johnson</h3><span>Co-Owner</span></div>
+<div class="owner-row"><h3>Jayden Posch</h3><span>Co-Owner</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="gallery" id="work">
+<div class="wrap">
+<div class="section-head reveal">
+<div class="eyebrow">Recent Jobs</div>
+<h2>Our Work</h2>
+<p>Photos from completed jobs. Owners can add new ones below — they'll show up here for every visitor.</p>
+</div>
+
+<div class="upload-box reveal" id="dropZone">
+<svg viewBox="0 0 24 24" fill="none" stroke="#7be08f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:30px;height:30px;margin:0 auto;"><path d="M12 16 V4"></path><path d="M6 10 L12 4 L18 10"></path><path d="M4 20 H20"></path></svg>
+<p>Drag photos here, or</p>
+<div class="upload-btn-row">
+<button class="btn btn-primary" type="button" id="pickFiles">Upload Photos</button>
+</div>
+<input type="file" id="fileInput" accept="image/*" multiple>
+<p class="gallery-note">Uploaded photos are public and visible to everyone who views this site.</p>
+</div>
+
+<div class="gallery-grid reveal" id="galleryGrid">
+<p class="gallery-loading">Loading photos…</p>
+</div>
+</div>
+</section>
+
+<section id="book">
+<div class="wrap booking-wrap">
+<div class="booking-info reveal">
+<div class="eyebrow">Get Started</div>
+<h2>Book a service.</h2>
+<p style="margin-top:18px; font-size:16px; color:var(--grey); max-width:420px;">Fill this out and it'll open a pre-written email to send our way. We'll get back to you to confirm timing and price.</p>
+<div class="info-list">
+<div>
+<h4>Response Time</h4>
+<p>We typically reply within one business day.</p>
+</div>
+<div>
+<h4>Service Area</h4>
+<p>Tell us your address — we'll confirm if you're in range.</p>
+</div>
+<div>
+<h4>Estimates</h4>
+<p>Free, no-obligation quotes on every request.</p>
+</div>
+</div>
+</div>
+
+<form id="bookingForm" novalidate>
+<div class="form-row">
+<div>
+<label for="fullName">Full Name</label>
+<input type="text" id="fullName" required>
+</div>
+<div>
+<label for="phone">Phone</label>
+<input type="tel" id="phone" required>
+</div>
+</div>
+<div class="form-row">
+<div>
+<label for="email">Email</label>
+<input type="email" id="email" required>
+</div>
+<div>
+<label for="date">Preferred Date</label>
+<input type="date" id="date">
+</div>
+</div>
+<div>
+<label for="address">Property Address</label>
+<input type="text" id="address" required>
+</div>
+<fieldset>
+<legend class="mono" style="font-size:12px; text-transform:uppercase; letter-spacing:0.07em; color:var(--grey-dim);">Services Needed</legend>
+<div class="check-grid">
+<label class="check-item"><input type="checkbox" value="Mowing"> Mowing</label>
+<label class="check-item"><input type="checkbox" value="Weed Whacking"> Weed Whacking</label>
+<label class="check-item"><input type="checkbox" value="Edging"> Edging</label>
+<label class="check-item"><input type="checkbox" value="Branch & Shrub Trimming"> Branch &amp; Shrub Trimming</label>
+<label class="check-item"><input type="checkbox" value="Mulching"> Mulching</label>
+<label class="check-item"><input type="checkbox" value="Leaf & Debris Cleanup"> Leaf &amp; Debris Cleanup</label>
+<label class="check-item"><input type="checkbox" value="Hedge Shaping"> Hedge Shaping</label>
+<label class="check-item"><input type="checkbox" value="Seasonal Cleanup"> Seasonal Cleanup</label>
+</div>
+</fieldset>
+<div>
+<label for="notes">Anything else we should know?</label>
+<textarea id="notes" placeholder="Property size, gate codes, pets, specific problem areas..."></textarea>
+</div>
+<div class="submit-row">
+<button type="submit" class="btn btn-primary">Request a Quote</button>
+<span id="form-status"></span>
+</div>
+</form>
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+<div class="footer-grid">
+<div>
+<h4>CMJ Landscape LLC</h4>
+<p style="color:var(--grey); max-width:280px;">Owner-operated lawn and yard care. Mowing, trimming, edging, and everything in between.</p>
+</div>
+<div>
+<h4>Contact</h4>
+<a href="mailto:info@cmjlandscapellc.com">info@cmjlandscapellc.com</a>
+<a href="#book">Request a quote →</a>
+</div>
+<div>
+<h4>Site</h4>
+<span class="mono">www.cmjlandscapellc.com</span>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© <span id="year"></span> CMJ Landscape LLC. All rights reserved.</span>
+<span>Connor Banks · Michael Johnson · Jayden Posch</span>
+</div>
+</div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// ---------- Mobile menu ----------
+const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobileMenu');
+burger.addEventListener('click', () => {
+mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+});
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.style.display = 'none'));
+
+// ---------- Scroll reveal ----------
+const revealEls = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+const io = new IntersectionObserver((entries) => {
+entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+revealEls.forEach(el => io.observe(el));
+} else {
+revealEls.forEach(el => el.classList.add('in'));
+}
+
+// ---------- Gallery (persisted via window.storage, shared) ----------
+const galleryGrid = document.getElementById('galleryGrid');
+const dropZone = document.getElementById('dropZone');
+const fileInput = document.getElementById('fileInput');
+const pickFiles = document.getElementById('pickFiles');
+
+pickFiles.addEventListener('click', () => fileInput.click());
+fileInput.addEventListener('change', (e) => handleFiles(e.target.files));
+
+['dragover','dragenter'].forEach(ev => dropZone.addEventListener(ev, (e) => { e.preventDefault(); dropZone.classList.add('drag'); }));
+['dragleave','drop'].forEach(ev => dropZone.addEventListener(ev, (e) => { e.preventDefault(); dropZone.classList.remove('drag'); }));
+dropZone.addEventListener('drop', (e) => { if (e.dataTransfer.files.length) handleFiles(e.dataTransfer.files); });
+
+function resizeImage(file, maxDim = 1100, quality = 0.72) {
+return new Promise((resolve, reject) => {
+const reader = new FileReader();
+reader.onload = (e) => {
+const img = new Image();
+img.onload = () => {
+let { width, height } = img;
+if (width > height && width > maxDim) { height = Math.round(height * (maxDim / width)); width = maxDim; }
+else if (height > maxDim) { width = Math.round(width * (maxDim / height)); height = maxDim; }
+const canvas = document.createElement('canvas');
+canvas.width = width; canvas.height = height;
+canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+resolve(canvas.toDataURL('image/jpeg', quality));
+};
+img.onerror = reject;
+img.src = e.target.result;
+};
+reader.onerror = reject;
+reader.readAsDataURL(file);
+});
+}
+
+async function handleFiles(fileList) {
+const files = Array.from(fileList).filter(f => f.type.startsWith('image/'));
+for (const file of files) {
+try {
+const dataUrl = await resizeImage(file);
+const id = 'img_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
+await window.storage.set('gallery-img:' + id, dataUrl, true);
+const idx = await getGalleryIndex();
+idx.unshift({ id, ts: Date.now() });
+await window.storage.set('gallery-index', JSON.stringify(idx), true);
+renderGallery(idx);
+} catch (err) {
+console.error('Upload failed:', err);
+}
+}
+fileInput.value = '';
+}
+
+async function getGalleryIndex() {
+try {
+const res = await window.storage.get('gallery-index', true);
+return res ? JSON.parse(res.value) : [];
+} catch (err) {
+return [];
+}
+}
+
+async function removeImage(id) {
+try {
+await window.storage.delete('gallery-img:' + id, true);
+const idx = (await getGalleryIndex()).filter(item => item.id !== id);
+await window.storage.set('gallery-index', JSON.stringify(idx), true);
+renderGallery(idx);
+} catch (err) {
+console.error('Delete failed:', err);
+}
+}
+
+async function renderGallery(idx) {
+if (!idx.length) {
+galleryGrid.innerHTML = '<p class="gallery-empty">No photos yet. Upload the first one above.</p>';
+return;
+}
+galleryGrid.innerHTML = '';
+for (const item of idx) {
+try {
+const res = await window.storage.get('gallery-img:' + item.id, true);
+if (!res) continue;
+const div = document.createElement('div');
+div.className = 'gallery-item';
+const img = document.createElement('img');
+img.src = res.value;
+img.alt = 'Completed landscaping job';
+img.loading = 'lazy';
+const btn = document.createElement('button');
+btn.innerHTML = '&times;';
+btn.setAttribute('aria-label', 'Remove photo');
+btn.addEventListener('click', () => removeImage(item.id));
+div.appendChild(img);
+div.appendChild(btn);
+galleryGrid.appendChild(div);
+} catch (err) {
+console.error('Load image failed:', err);
+}
+}
+if (!galleryGrid.children.length) {
+galleryGrid.innerHTML = '<p class="gallery-empty">No photos yet. Upload the first one above.</p>';
+}
+}
+
+(async function initGallery() {
+try {
+const idx = await getGalleryIndex();
+renderGallery(idx);
+} catch (err) {
+galleryGrid.innerHTML = '<p class="gallery-empty">Couldn\'t load photos right now.</p>';
+}
+})();
+
+// ---------- Booking form ----------
+const bookingForm = document.getElementById('bookingForm');
+const formStatus = document.getElementById('form-status');
+
+bookingForm.addEventListener('submit', async (e) => {
+e.preventDefault();
+const name = document.getElementById('fullName').value.trim();
+const phone = document.getElementById('phone').value.trim();
+const email = document.getElementById('email').value.trim();
+const date = document.getElementById('date').value;
+const address = document.getElementById('address').value.trim();
+const notes = document.getElementById('notes').value.trim();
+const services = Array.from(bookingForm.querySelectorAll('input[type=checkbox]:checked')).map(c => c.value);
+
+if (!name || !phone || !email || !address) {
+formStatus.textContent = 'Please fill out the required fields.';
+formStatus.style.color = '#e0847b';
+return;
+}
+
+const id = 'bk_' + Date.now();
+const booking = { id, name, phone, email, date, address, services, notes, ts: Date.now() };
+try {
+await window.storage.set('booking:' + id, JSON.stringify(booking), true);
+} catch (err) {
+console.error('Could not save booking record:', err);
+}
+
+const subject = encodeURIComponent('Quote Request — ' + name);
+const bodyLines = [
+'Name: ' + name,
+'Phone: ' + phone,
+'Email: ' + email,
+'Preferred Date: ' + (date || 'Flexible'),
+'Address: ' + address,
+'Services: ' + (services.length ? services.join(', ') : 'Not specified'),
+'Notes: ' + (notes || 'None')
+];
+const body = encodeURIComponent(bodyLines.join('\n'));
+window.location.href = 'mailto:info@cmjlandscapellc.com?subject=' + subject + '&body=' + body;
+
+formStatus.textContent = 'Request ready — check your email app to send it.';
+formStatus.style.color = '#7be08f';
+bookingForm.reset();
+});
+</script>
+</body>
+</html>
